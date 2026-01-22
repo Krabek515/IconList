@@ -22,15 +22,15 @@
         </div>
         <nav>
             <div class="search-block">
-                <div class="search-query">Найти иконку</div>
+                <div class="search-query"><input type="text" placeholder="Найти иконку" maxlength="32"></div>
             </div>
             <ul class="main-links">
-                <li>Католог</li>
-                <li>Создать</li>
-                <li>Редактировать</li>
+                <li><a href="/">Католог</a></li>
+                <li><a href="/">Создать</a></li>
+                <li><a href="/">Редактировать</a></li>
             </ul>
         </nav>
-        <button class="login-button">Войти</button>
+        <button class="login-button" id="login-button">Войти</button>
     </header>
     <main>
         <div class="main-categories">
@@ -38,20 +38,20 @@
                 <li>
                     <div class="main-categories-block"><img src="pictures/stickers-elipse.png" alt="stickers">
                     </div>
-                    <div class="main-categories-sign">Стикеры</div>
+                    <div class="main-categories-sign"><a href="/">Стикеры</a></div>
                 </li>
                 <li>
                     <div class="main-categories-block"><img src="pictures/icons-elipse.png" alt="icons"></div>
-                    <div class="main-categories-sign">Иконки</div>
+                    <div class="main-categories-sign"><a href="/">Иконки</a></div>
                 </li>
                 <li>
                     <div class="main-categories-block"><img src="pictures/authors-elipse.png" alt="authors"></div>
-                    <div class="main-categories-sign">Авторское</div>
+                    <div class="main-categories-sign"><a href="/">Авторское</a></div>
                 </li>
                 <li>
                     <div class="main-categories-block"><img src="pictures/popular-elipse.png" alt="popular-categories">
                     </div>
-                    <div class="main-categories-sign">Популярное</div>
+                    <div class="main-categories-sign"><a href="/">Популярное</a></div>
                 </li>
             </ul>
         </div>
@@ -62,28 +62,28 @@
                     <div class="background-frame" style="background-color: #E1E9FC;">
                         <img src="pictures/christmas-tree.png" alt="christmas-tree">
                     </div>
-                    <div class="categories-sign">Рождество</div>
+                    <a href="/" class="categories-sign">Рождество</a>
                     <div class="categories-icon-count">25 иконок</div>
                 </li>
                 <li>
                     <div class="background-frame" style="background-color: #94A7D4;">
                         <img src="pictures/basketball-ball.png" alt="basketball-ball">
                     </div>
-                    <div class="categories-sign">Спорт</div>
+                    <a href="/" class="categories-sign">Спорт</a>
                     <div class="categories-icon-count">107 иконок</div>
                 </li>
                 <li>
                     <div class="background-frame" style="background-color: #F8FCE1;">
                         <img src="pictures/builder.png" alt="builder">
                     </div>
-                    <div class="categories-sign">Работа</div>
+                    <a href="/" class="categories-sign">Работа</a>
                     <div class="categories-icon-count">98 иконок</div>
                 </li>
                 <li>
                     <div class="background-frame" style="background-color: #87C49E;">
                         <img src="pictures/cute-cat.png" alt="cute-cat">
                     </div>
-                    <div class="categories-sign">Животные</div>
+                    <a href="/" class="categories-sign">Животные</a>
                     <div class="categories-icon-count">25 иконок</div>
                 </li>
             </ul>
@@ -95,28 +95,28 @@
                     <div class="background-frame" style="background-color: #FEDEFA;">
                         <img src="pictures/youtube.png" alt="youtube">
                     </div>
-                    <div class="categories-sign">Бренды</div>
+                    <a href="/" class="categories-sign">Бренды</a>
                     <div class="categories-icon-count">213 иконок</div>
                 </li>
                 <li>
                     <div class="background-frame" style="background-color: #D494B0;">
                         <img src="pictures/smile-tongue.png" alt="smile-tongue">
                     </div>
-                    <div class="categories-sign">Смайлики</div>
+                    <a href="/" class="categories-sign">Смайлики</a>
                     <div class="categories-icon-count">340 иконок</div>
                 </li>
                 <li>
                     <div class="background-frame" style="background-color: #DEF9FF;">
                         <img src="pictures/stop-sign.png" alt="stop-sign">
                     </div>
-                    <div class="categories-sign">Знаки</div>
+                    <a href="/" class="categories-sign">Знаки</a>
                     <div class="categories-icon-count">45 иконок</div>
                 </li>
                 <li>
                     <div class="background-frame" style="background-color: #FF8688;">
                         <img src="pictures/pepe.png" alt="pepe">
                     </div>
-                    <div class="categories-sign">Разное</div>
+                    <a href="/" class="categories-sign">Разное</a>
                     <div class="categories-icon-count">605 иконок</div>
                 </li>
             </ul>
@@ -135,9 +135,9 @@
     <footer>
         <div class="made-in">© 2026 Даниил Раитин</div>
         <ul class="help-links">
-            <li>О компании</li>
-            <li>О сервисе</li>
-            <li>Помощь</li>
+            <li><a href="/">О компании</a></li>
+            <li><a href="/">О сервисе</a></li>
+            <li><a href="/">Помощь</a></li>
         </ul>
         <div class="number">+7 (984) 262 81 71</div>
         <div class="we-links">
@@ -148,6 +148,17 @@
             </ul>
         </div>
     </footer>
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-modal">
+            <form action="">
+                <input type="text" placeholder="Логин" maxlength="20">
+                <input type="password" placeholder="Пароль" maxlength="20">
+                <button>Войти</button>
+                <a href="">Зарегестрироваться</a>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
